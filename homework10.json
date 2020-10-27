@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "title": "Sectors of imports and exports Australia 2016",
+  "data": {
+    "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
+  },
+  "params": [
+    {
+      "name": "Sector_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Agriculture, forestry & fisheries",
+          "Manufactures",
+          "Minerals & fuels",
+          "Other goods"
+        ],
+        "labels": [
+          "Show All",
+          "Agriculture, forestry & fisheries",
+          "Manufactures",
+          "Minerals & fuels",
+          "Other goods"
+        ],
+        "name": "Sector Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Sector_selection == null || datum.Sector == Sector_selection"},
+    {"calculate": "datum.Sector", "as": "Number of imports and exports"}
+  ],
+  "selection": {
+    "sector_highlight": {
+      "type": "multi",
+      "fields": ["Sector"],
+      "bind": "legend"
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Number of imports and exports"
+    },
+    "y": {"field": "State", "type": "ordinal", "sort": "-x"},
+    "tooltip": [
+      {"field": "State", "type": "nominal"},
+      {"field": "Sector", "type": "nominal", "title": "Sector"}
+    ],
+    "color": {
+      "type": "nominal",
+      "field": "Sector",
+      "scale": {
+        "domain": [
+          "Agriculture, forestry & fisheries",
+          "Manufactures",
+          "Minerals & fuels",
+          "Other goods"
+        ],
+        "range": ["#e7ba52", "#c7c7c7", "#aec7e8", "#1f77b4", "#9467bd"]
+      },
+      "title": "Sector",
+      "legend": {"orient": "left"}
+    },
+    "opacity": {
+      "condition": {"selection": "sector_highlight", "value": 0.6},
+      "value": 0.2
+    }
+  },
+  "config": {}
+}
