@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Import and Exports of Australia 2016",
-  "width": 800,
-  "height": 600,
+  "width": 200,
+  "height": 200,
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/Aust.json",
