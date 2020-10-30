@@ -8,7 +8,7 @@
     "lineHeight": 50
   },
   "width": {"step": 75},
-  "height": 600,
+  "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
   },
