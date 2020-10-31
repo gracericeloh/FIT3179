@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 190,
   "height": 200,
-  "title": {"text": "Australia's Trading Sectors 2016", "fontSize": 20},
+  "title": {"text": "", "fontSize": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
   },
@@ -48,7 +48,7 @@
       "stack": "zero",
       "axis": {
         "title": "Number of imports and exports",
-        "titleFontSize": 20,
+        "titleFontSize": 15,
         "labelFontSize": 15
       }
     },
@@ -58,14 +58,14 @@
       "sort": "-x",
       "axis": {
         "title": "States",
-        "titleFontSize": 20,
-        "titleAngle": 0,
+        "titleFontSize": 15,
         "labelFontSize": 15
       }
     },
     "tooltip": [
       {"field": "State", "type": "nominal"},
-      {"field": "Sector", "type": "nominal", "title": "Sector"}
+      {"field": "Sector", "type": "nominal", "title": "Sector"}, 
+      {"field": "Sector", "type":"quantitative", "title": "Number of trades", "aggregate": "count" }
     ],
     "color": {
       "type": "nominal",
@@ -81,7 +81,7 @@
       },
       "title": "Sector",
       "legend": {
-        "orient": "left",
+        "orient": "right",
         "labelFontSize": 15,
         "titleFontSize": 20,
         "labelLimit": 250
@@ -90,6 +90,7 @@
     "opacity": {
       "condition": {"selection": "sector_highlight", "value": 0.6},
       "value": 0.2
+      
     }
   },
   "config": {}
