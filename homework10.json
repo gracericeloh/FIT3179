@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 200,
+  "width": 190,
   "height": 200,
   "title": {"text": "Australia's Trading Sectors 2016", "fontSize": 20},
   "data": {
