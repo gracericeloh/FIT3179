@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Import and Exports of Australia 2016",
-  "width": 300,
-  "height": 200,
+  "title": "Export expenditure",
+  "width": 500,
+  "height": 250,
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/Aust.json",
@@ -10,22 +10,23 @@
   },
   "transform": [
     {
-      "lookup": "properties.STATE_NAME",
+     "lookup": "properties.STATE_NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
+          "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/import_export_expenditure.csv"
         },
         "key": "State",
-        "fields": ["Expenditure in thousands"]
+        "fields": ["Export_exp"]
       }
     }
+
   ],
   "mark": {"type": "geoshape"},
   "encoding": {
-    "color": {"field": "Expenditure in thousands", "type": "quantitative"},
+    "color": {"field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands"},
     "tooltip": [
       {"field": "properties.STATE_NAME", "type": "nominal", "title": "Country"},
-      {"field": "Expenditure in thousands", "type": "quantitative"}
+      {"field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands", "format": ".2f" }
     ]
   },
   "config": {}
