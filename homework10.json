@@ -1,97 +1,80 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 150,
-  "height": 200,
-  "title": {"text": "", "fontSize": 20},
+  "title": {
+    "text": "Trades with Geographic partner",
+    "fontSize": 20,
+    "align": "center",
+    "anchor": "middle",
+    "lineHeight": 50
+  },
+  "width": {"step": 75},
+  "height": 250,
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
   },
   "params": [
     {
-      "name": "Sector_selection",
+      "name": "geo_selection",
       "bind": {
         "input": "select",
-        "options": [
-          null,
-          "Agriculture, forestry & fisheries",
-          "Manufactures",
-          "Minerals & fuels",
-          "Other goods"
-        ],
-        "labels": [
-          "Show All",
-          "Agriculture, forestry & fisheries",
-          "Manufactures",
-          "Minerals & fuels",
-          "Other goods"
-        ],
-        "name": "Sector Selection: "
+        "options": [null, "Asia", "Europe", "Oceania & Antarctica"],
+        "labels": ["Show All", "Asia", "Europe", "Oceania & Antarctica"],
+        "name": "Geographic Selection: "
       }
     }
   ],
   "transform": [
-    {"filter": "Sector_selection == null || datum.Sector == Sector_selection"},
-    {"calculate": "datum.Sector", "as": "Number of imports and exports"}
+    {"filter": "geo_selection == null || datum.Geo_1 == geo_selection"},
+    {
+      "calculate": "datum.Trade_type == 'Total Exports' ? 'Total Exports' : 'Total Imports'",
+      "as": "Trade type"
+    }
   ],
   "selection": {
-    "sector_highlight": {
+    "tradetype_highlight": {
       "type": "multi",
-      "fields": ["Sector"],
+      "fields": ["Trade type"],
       "bind": "legend"
     }
   },
   "mark": "bar",
   "encoding": {
+    "column": {
+      "field": "Geo_1",
+      "type": "nominal",
+      "spacing": 30,
+      "header": {"title": "", "titleFontSize": 10, "labelFontSize": 15}
+    },
     "x": {
-      "aggregate": "count",
-      "type": "quantitative",
-      "stack": "zero",
+      "field": "Trade type",
       "axis": {
-        "title": "Number of imports and exports",
-        "titleFontSize": 15,
-        "labelFontSize": 15
+        "labelAngle": -35,
+        "title": "",
+        "labelFontSize": 15,
+        "titleFontSize": 20
       }
     },
     "y": {
-      "field": "State",
-      "type": "ordinal",
-      "sort": "-x",
-      "axis": {"title": "States", "titleFontSize": 15, "labelFontSize": 15}
+      "aggregate": "count",
+      "field": "Trade type",
+      "axis": {"title": "Number of trades", "grid": false, "labelFontSize": 15}
     },
-    "tooltip": [
-      {"field": "State", "type": "nominal"},
-      {"field": "Sector", "type": "nominal", "title": "Sector"},
-      {
-        "field": "Sector",
-        "type": "quantitative",
-        "title": "Number of trades",
-        "aggregate": "count"
-      }
-    ],
     "color": {
-      "type": "nominal",
-      "field": "Sector",
-      "scale": {
-        "domain": [
-          "Agriculture, forestry & fisheries",
-          "Manufactures",
-          "Minerals & fuels",
-          "Other goods"
-        ],
-        "range": ["#20A30D", "#0D5CA3", "#8C0DA3", "#A3690D"]
-      },
-      "title": "Sector",
-      "legend": {
-        "orient": "right",
-        "labelFontSize": 15,
-        "titleFontSize": 20,
-        "labelLimit": 250
-      }
+      "field": "Trade type",
+      "scale": {"range": ["#675193", "#ca8861"]}
     },
     "opacity": {
-      "condition": {"selection": "sector_highlight", "value": 0.6},
+      "condition": {"selection": "tradetype_highlight", "value": 0.6},
       "value": 0.2
-    }
+    },
+    "tooltip": [
+      {"field": "Geo_1", "type": "nominal", "title": "Geographic location"},
+      {"field": "Trade type", "type": "nominal", "title": "Trade type"},
+      {"field": "Trade type", "type": "quantitative", "title": "Number of trades",
+        "aggregate": "count", "format": ","}
+        
+ 
+    ]
   },
-  "config": {}
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
 }
