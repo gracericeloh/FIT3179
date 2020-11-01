@@ -68,11 +68,12 @@
       "value": 0.2
     },
     "tooltip": [
-      {"field": "Geo", "type": "nominal"},
-      {"field": "Confirmed", "type": "quantitative", "format": ","},
-      {"field": "Active", "type": "quantitative", "format": ","},
-      {"field": "Deaths", "type": "quantitative", "format": ","},
-      {"field": "Recovered", "type": "quantitative", "format": ","}
+      {"field": "Geo_1", "type": "nominal", "title": "Geographic location"},
+      {"field": "Trade type", "type": "nominal", "title": "Trade type"},
+      {"field": "Trade type", "type": "quantitative", "title": "Number of trades",
+        "aggregate": "count", "format": ","}
+        
+ 
     ]
   },
   "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
