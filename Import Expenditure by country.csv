@@ -1,0 +1,220 @@
+Partner_country,sum_exp,Count_imports,geo_1
+Algeria,370361.328,9,Africa
+Angola,13065.835,8,Africa
+Benin,8.289,2,Africa
+Botswana,1077.923,11,Africa
+British Indian Ocean Territory,12.649,1,Africa
+Burkina Faso,23.079,3,Africa
+Burundi,500.417,4,Africa
+Cabo Verde,115.992,3,Africa
+Cameroon,762.727,26,Africa
+Central African Republic,3.789,1,Africa
+Chad,25.491,7,Africa
+Comoros,14.679,3,Africa
+Cote d'Ivoire,20517.659,19,Africa
+Democratic Republic of the Congo,238.466,10,Africa
+Djibouti,1159.267,11,Africa
+Egypt,34295.34,184,Africa
+Equatorial Guinea,86642.261,2,Africa
+Eritrea,31.508,10,Africa
+Ethiopia,24309.357,50,Africa
+Gabon,603638.251,10,Africa
+Gambia,9.321,2,Africa
+Ghana,10101.124,80,Africa
+Guinea,104.508,10,Africa
+Kenya,30294.422,89,Africa
+Lesotho,1106.65,17,Africa
+Liberia,53.55,10,Africa
+Libya,2.8,1,Africa
+Madagascar,10083.076,65,Africa
+Malawi,40.081,2,Africa
+Mali,4332.008,31,Africa
+Mauritania,210.526,13,Africa
+Mauritius,26583.131,111,Africa
+Morocco,66020.12,197,Africa
+Mozambique,1120.57,20,Africa
+Namibia,10026.874,38,Africa
+Niger,1641.183,54,Africa
+Nigeria,1210.498,44,Africa
+Republic of Congo,268559.762,11,Africa
+Reunion,224.812,19,Africa
+Rwanda,1527.286,6,Africa
+Sao Tome & Principe,146.325,13,Africa
+Senegal,2335.347,20,Africa
+Seychelles,2016.013,18,Africa
+Sierra Leone,2385.069,97,Africa
+Somalia,481.178,6,Africa
+South Africa,1059678.352,804,Africa
+South Sudan,45.252,6,Africa
+St Helena,2574.269,11,Africa
+Sudan,733.782,19,Africa
+Swaziland,3560.793,48,Africa
+Tanzania,5609.39,50,Africa
+Togo,10781.832,7,Africa
+Tunisia,31803.434,143,Africa
+Uganda,3588.984,24,Africa
+Western Sahara,10.369,1,Africa
+Zambia,582.896,20,Africa
+Zimbabwe,834.395,40,Africa
+Anguilla,2.834,2,Americas
+Antigua & Barbuda,871.73,9,Americas
+Argentina,666625.989,279,Americas
+Bahamas,2543.873,9,Americas
+Barbados,2321.528,14,Americas
+Belize,805.431,31,Americas
+Bermuda,289.897,2,Americas
+Bolivia,13714.907,47,Americas
+Brazil,753439.276,580,Americas
+Canada,2101398.953,898,Americas
+Cayman Islands,927.691,10,Americas
+Chile,532703.772,271,Americas
+Colombia,76195.866,186,Americas
+Costa Rica,114175.595,131,Americas
+Cuba,11440.816,19,Americas
+Dominica,282.202,21,Americas
+Dominican Republic,74748.149,101,Americas
+Ecuador,29679.773,117,Americas
+El Salvador,10589.019,77,Americas
+Falkland Islands,32.247,5,Americas
+French Antilles,704.217,36,Americas
+Grenada,98.559,3,Americas
+Guatemala,18198.948,61,Americas
+Guyana,391.382,7,Americas
+Haiti,2288.862,30,Americas
+Honduras,26232.009,61,Americas
+Jamaica,2207.375,20,Americas
+Mexico,2505609.068,632,Americas
+Montserrat,52.913,8,Americas
+Netherlands Antilles,341.264,9,Americas
+Nicaragua,21538.31,54,Americas
+Panama,5670.777,39,Americas
+Paraguay,4306.008,27,Americas
+Peru,352514.732,249,Americas
+Puerto Rico,330472.49,96,Americas
+St Kitts & Nevis,112.497,7,Americas
+St Lucia,4.388,1,Americas
+St Pierre & Miquelon,29.724,2,Americas
+St Vincent & Grenadines,7.092,2,Americas
+Suriname,461.48,19,Americas
+Trinidad & Tobago,8942.453,23,Americas
+Turks & Caicos Islands,18.038,2,Americas
+UK Virgin Islands,5617.318,28,Americas
+United States,28808924.35,1395,Americas
+Uruguay,22050.185,54,Americas
+US Virgin Islands,980.936,19,Americas
+Venezuela,1091.785,31,Americas
+Afghanistan,298.626,28,Asia
+Armenia,311.935,22,Asia
+Azerbaijan,279.198,9,Asia
+Bahrain,59720.269,39,Asia
+Bangladesh,886531.645,200,Asia
+Bhutan,1042.27,5,Asia
+Brunei,315247.835,19,Asia
+Cambodia,213057.321,149,Asia
+China,59373125.11,1389,Asia
+Georgia,3879.143,79,Asia
+Hong Kong (SAR of China),921602.564,756,Asia
+India,4364583.063,1014,Asia
+Indonesia,4907151.139,902,Asia
+Iran,85977.845,232,Asia
+Iraq,89.728,17,Asia
+Israel,794866.926,566,Asia
+Japan,19583099.43,993,Asia
+Jordan,30404.447,108,Asia
+Kazakhstan,1974.102,10,Asia
+Kuwait,19973.686,34,Asia
+Kyrgyzstan,53.251,5,Asia
+Laos,11350.101,45,Asia
+Lebanon,17500.884,166,Asia
+Macau (SAR of China),16670.346,100,Asia
+Malaysia,9315259.564,982,Asia
+Maldives,1552.482,14,Asia
+Mongolia,1709.509,42,Asia
+Myanmar,32564.782,205,Asia
+Nepal,8264.206,144,Asia
+Oman,47151.453,69,Asia
+Pakistan,347242.279,335,Asia
+Philippines,777656.732,598,Asia
+Qatar,342974.78,69,Asia
+Republic of Korea,10929615.6,971,Asia
+Saudi Arabia,435207.904,189,Asia
+Singapore,6989026.484,934,Asia
+Sri Lanka,223388.186,384,Asia
+Syria,1505.127,34,Asia
+Taiwan,4356194.108,963,Asia
+Tajikistan,18.057,3,Asia
+Thailand,14581397.66,1004,Asia
+Timor-Leste,1890.429,24,Asia
+Turkmenistan,2138.437,7,Asia
+United Arab Emirates,2044581.317,558,Asia
+Uzbekistan,23.728,6,Asia
+Vietnam,4503217.326,794,Asia
+Yemen,22.63,2,Asia
+Albania,2471.814,50,Europe
+Austria,1442496.764,680,Europe
+Belarus,3075.699,44,Europe
+Belgium,1700355.177,814,Europe
+Bosnia-Herzegovina,26660.955,101,Europe
+Bulgaria,70557.328,325,Europe
+Croatia,31138.088,266,Europe
+Cyprus,27777.634,98,Europe
+Czech Republic,752478.541,559,Europe
+Denmark,1210625.11,733,Europe
+Estonia,73153.035,228,Europe
+Finland,764625.182,572,Europe
+France,4510732.247,1024,Europe
+FYR Macedonia,8649.338,97,Europe
+Germany,13523821.98,1179,Europe
+Gibraltar,22.801,6,Europe
+Greece,211082.785,418,Europe
+Hungary,584379.658,471,Europe
+Iceland,16114.598,113,Europe
+Ireland,2730538.408,510,Europe
+Italy,5899325.316,1081,Europe
+Latvia,18032.191,197,Europe
+Lithuania,48683.794,260,Europe
+Luxembourg,21789.859,136,Europe
+Malta,23281.136,96,Europe
+Moldova,1229.668,41,Europe
+Montenegro,425.765,14,Europe
+Netherlands,2263411.996,993,Europe
+Norway,319122.081,525,Europe
+Poland,893069.912,656,Europe
+Portugal,208706.118,473,Europe
+Romania,251419.014,363,Europe
+Russian Federation,219204.257,274,Europe
+Serbia,46805.567,192,Europe
+Slovak Republic,328303.191,345,Europe
+Slovenia,135798.465,370,Europe
+Spain,2091776.816,878,Europe
+Sweden,2049382.605,716,Europe
+Switzerland,3169908.782,772,Europe
+Turkey,993504.752,651,Europe
+Ukraine,45139.48,202,Europe
+United Kingdom,7125277.683,1171,Europe
+American Samoa,13137.248,39,Oceania & Antarctica
+Antarctica,89.777,3,Oceania & Antarctica
+Christmas Island,2852.112,12,Oceania & Antarctica
+Cocos Keeling Islands,73.919,14,Oceania & Antarctica
+Cook Islands,697.468,15,Oceania & Antarctica
+Federated States of Micronesia,13.55,2,Oceania & Antarctica
+Fiji,190445.315,238,Oceania & Antarctica
+French Polynesia,1763.213,25,Oceania & Antarctica
+Guam,253.318,19,Oceania & Antarctica
+Kiribati,209.598,3,Oceania & Antarctica
+Marshall Islands,602.555,19,Oceania & Antarctica
+Nauru,6331.151,16,Oceania & Antarctica
+New Caledonia,29990.574,114,Oceania & Antarctica
+New Zealand,7547552.075,1061,Oceania & Antarctica
+Niue,78.782,8,Oceania & Antarctica
+Norfolk Island,97.576,7,Oceania & Antarctica
+Northern Mariana Islands,4.197,2,Oceania & Antarctica
+Palau,7.61,2,Oceania & Antarctica
+Papua New Guinea,3556672.722,201,Oceania & Antarctica
+Pitcairn Islands,14.902,2,Oceania & Antarctica
+Samoa,32948.605,83,Oceania & Antarctica
+Solomon Islands,9607.252,45,Oceania & Antarctica
+Tonga,2026.63,24,Oceania & Antarctica
+Tuvalu,137.303,11,Oceania & Antarctica
+US Minor Outlying Islands,35.208,4,Oceania & Antarctica
+Vanuatu,1695.088,34,Oceania & Antarctica
