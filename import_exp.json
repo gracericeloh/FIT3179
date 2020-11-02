@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": {"text": "Import expenditure", "fontSize": 20},
+  "width": 500,
+  "height": 500,
+  "projection": {"type": "equirectangular"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/Aust.json",
+    "format": {"type": "topojson", "feature": "STE11aAust"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.STATE_NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/import_export_expenditure.csv"
+        },
+        "key": "State",
+        "fields": ["Import_exp"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "legend": {
+        "labelFontSize": 12,
+        "title": "Expenditure in thousands",
+        "titleFontSize": 12
+      },
+      "field": "Import_exp",
+      "type": "quantitative",
+      "title": "Expenditure in thousands",
+      "scale": {"range": ["#FAEBD7", "#675193"]}
+    },
+    "tooltip": [
+      {"field": "properties.STATE_NAME", "type": "nominal", "title": "Country"},
+      {
+        "field": "Import_exp",
+        "type": "quantitative",
+        "title": "Expenditure in thousands",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {}
+}
