@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
-    "text": "Trades with Geographic partner",
-    "fontSize": 20,
+    "text": "Continents",
+    "fontSize": 15,
     "align": "center",
     "anchor": "middle",
     "lineHeight": 50
@@ -43,7 +43,7 @@
       "field": "Geo_1",
       "type": "nominal",
       "spacing": 30,
-      "header": {"title": "", "titleFontSize": 10, "labelFontSize": 15, "titleFontWeight": "bold"}
+      "header": {"title": "‎", "titleFontSize": 15, "labelFontSize": 15, "titleFontWeight": "bold"}
     },
     "x": {
       "field": "Trade type",
