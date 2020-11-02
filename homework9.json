@@ -26,7 +26,7 @@
   "encoding": {
     "color": {
       "legend": {"labelFontSize": 12, "title": "Expenditure in thousands", "titleFontSize":12},
-       "field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands","scale": {"range": ["#FAEBD7","#675193"]}},
+       "field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands","scale": {"range": ["#FFE4C4","#8B4513"]}},
     
     "tooltip": [
       {"field": "properties.STATE_NAME", "type": "nominal", "title": "Country"},
