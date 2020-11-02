@@ -124,7 +124,30 @@
         </div>  
     </div>
     <!-- end Choropleth map -->
-    
+      
+        <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1 style = "text-align:center"></h1>
+      </div>
+    </div>
+      
+     <!-- Imports from around the world text  -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2 style = "text-align:center"> Imports around the world </h2>
+        <p style = "text-align:center"> It is clear that we receive alot of imports from Europe and Asia </p>
+      </div>
+    </div>
+    <!-- end Imports from around the world text -->  
+      
+        <!-- pure grid group -->
+   <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div id="vis4" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+      
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
         <p>This visualisation is created by <a href="https://github.com/gracericeloh" target="_blank">Grace Loh</a>, adapted from an
@@ -132,13 +155,12 @@
       </div>
     </div>   
       </div> <!-- end page -->
-          
-     
-  
+            
 <script type="text/javascript">
   var spec1 = "https://gracericeloh.github.io/FIT3179/homework9.json";
   var spec2 = "https://gracericeloh.github.io/FIT3179/homework10.json";
   var spec3 = "https://gracericeloh.github.io/FIT3179/trade_with_geo.json";
+  var spec4 = "https://gracericeloh.github.io/FIT3179/imports_continent.json";
   
   vegaEmbed('#vis1', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -149,6 +171,10 @@
   }).catch(console.error);
   
        vegaEmbed('#vis3', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+         vegaEmbed('#vis4', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
