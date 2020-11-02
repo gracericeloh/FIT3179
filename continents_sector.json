@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 1000,
+  "height": 500,
+  "title": {"text": "", "fontSize": 20},
+  "data": {
+    "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
+  },
+  "params": [
+    {
+      "name": "Sector_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Agriculture, forestry & fisheries",
+          "Manufactures",
+          "Minerals & fuels",
+          "Other goods"
+        ],
+        "labels": [
+          "Show All",
+          "Agriculture, forestry & fisheries",
+          "Manufactures",
+          "Minerals & fuels",
+          "Other goods"
+        ],
+        "name": "Sector Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Sector_selection == null || datum.Sector == Sector_selection"},
+    {"calculate": "datum.Sector", "as": "Number of imports and exports"}
+  ],
+  "selection": {
+    "sector_highlight": {
+      "type": "multi",
+      "fields": ["Sector"],
+      "bind": "legend"
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": {
+        "title": "Number of imports and exports",
+        "titleFontSize": 15,
+        "labelFontSize": 15
+      }
+    },
+    "y": {
+      "field": "Geo_1",
+      "type": "ordinal",
+      "sort": "-x",
+      "axis": {"title": "Continents", "titleFontSize": 15, "labelFontSize": 15}
+    },
+    "tooltip": [
+      {"field": "Geo_1", "type": "nominal"},
+      {"field": "Sector", "type": "nominal", "title": "Sector"},
+      {
+        "field": "Sector",
+        "type": "quantitative",
+        "title": "Number of trades",
+        "aggregate": "count"
+      }
+    ],
+    "color": {
+      "type": "nominal",
+      "field": "Sector",
+      "scale": {
+        "domain": [
+          "Agriculture, forestry & fisheries",
+          "Manufactures",
+          "Minerals & fuels",
+          "Other goods"
+        ],
+        "range": ["#20A30D", "#0D5CA3", "#EE82EE", "#FF4500"]
+      },
+      "title": "Sector",
+      "legend": {
+        "orient": "right",
+        "labelFontSize": 15,
+        "titleFontSize": 15,
+        "labelLimit": 250
+      }
+    },
+    "opacity": {
+      "condition": {"selection": "sector_highlight", "value": 0.6},
+      "value": 0.2
+    }
+  },
+  "config": {}
+}
