@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Export expenditure",
+  "title": {"text": "Export expenditure",
+  "fontSize": 20},
   "width": 500,
-  "height": 250,
+  "height": 500,
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/Aust.json",
@@ -23,7 +24,10 @@
   ],
   "mark": {"type": "geoshape"},
   "encoding": {
-    "color": {"field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands"},
+    "color": {
+      "legend": {"labelFontSize": 12, "title": "Expenditure in thousands", "titleFontSize":12},
+       "field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands","scale": {"range": ["#FAEBD7","#675193"]}},
+    
     "tooltip": [
       {"field": "properties.STATE_NAME", "type": "nominal", "title": "Country"},
       {"field": "Export_exp", "type": "quantitative", "title": "Expenditure in thousands", "format": ".2f" }
