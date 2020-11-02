@@ -164,10 +164,18 @@
     </div>
     <!-- end Third text -->
       
-     <!-- Stacked bar chart -->
+     <!-- Stacked bar chart AUS -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-2">
         <div id= "vis2" class="center" ></div>
+      </div>
+    </div>
+    <!-- end Stacked bar chart -->
+    
+         <!-- Stacked bar chart CONTINENT-->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id= "vis6" class="center" ></div>
       </div>
     </div>
     <!-- end Stacked bar chart -->
@@ -189,6 +197,7 @@
   var spec3 = "https://gracericeloh.github.io/FIT3179/trade_with_geo.json";
   var spec4 = "https://gracericeloh.github.io/FIT3179/imports_continent.json";
   var spec5 = "https://gracericeloh.github.io/FIT3179/import_exp.json";
+  var spec6 = "https://gracericeloh.github.io/FIT3179/continents_sector.json";
   
   vegaEmbed('#vis1', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -207,6 +216,10 @@
   }).catch(console.error);
   
          vegaEmbed('#vis5', spec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+           vegaEmbed('#vis6', spec6).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
