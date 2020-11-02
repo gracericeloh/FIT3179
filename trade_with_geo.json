@@ -57,7 +57,7 @@
     "y": {
       "aggregate": "count",
       "field": "Trade type",
-      "axis": {"title": "Number of trades", "grid": false, "labelFontSize": 15}
+      "axis": {"title": "Number of trades", "grid": false, "labelFontSize": 15, "titleFontSize":15}
     },
     "color": {
       "field": "Trade type",
