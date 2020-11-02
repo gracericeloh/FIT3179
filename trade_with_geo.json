@@ -7,7 +7,7 @@
     "anchor": "middle",
     "lineHeight": 50
   },
-  "width": {"step": 100},
+  "width": {"step": 110},
   "height": 250,
   "data": {
     "url": "https://raw.githubusercontent.com/gracericeloh/FIT3179/main/2016_import_export.csv"
@@ -43,7 +43,7 @@
       "field": "Geo_1",
       "type": "nominal",
       "spacing": 30,
-      "header": {"title": "", "titleFontSize": 10, "labelFontSize": 15}
+      "header": {"title": "", "titleFontSize": 10, "labelFontSize": 15, "titleFontWeight": "bold"}
     },
     "x": {
       "field": "Trade type",
@@ -61,11 +61,11 @@
     },
     "color": {
       "field": "Trade type",
-      "scale": {"range": ["#675193", "#ca8861"]},
+      "scale": {"range": ["#DEB887", "#675193"]},
       "legend": {"labelFontSize": 17, "title": "Trade type", "titleFontSize":17}
     },
     "opacity": {
-      "condition": {"selection": "tradetype_highlight", "value": 0.6},
+      "condition": {"selection": "tradetype_highlight", "value": 1.0},
       "value": 0.2
     },
     "tooltip": [
